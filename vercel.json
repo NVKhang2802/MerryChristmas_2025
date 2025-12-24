@@ -1,32 +1,22 @@
 {
-  "routes": [
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
     {
-      "src": "^/$",
-      "dest": "/html/index.html"
+      "source": "/",
+      "destination": "/html/index.html"
     },
     {
-      "src": "^/gallery$",
-      "dest": "/html/gallery.html"
+      "source": "/gallery",
+      "destination": "/html/gallery.html"
     },
     {
-      "src": "^/wishes$",
-      "dest": "/html/wishes.html"
+      "source": "/wishes",
+      "destination": "/html/wishes.html"
     },
     {
-      "src": "^/celebration$",
-      "dest": "/html/celebration.html"
-    },
-    {
-      "src": "^/css/(.*)",
-      "dest": "/css/$1"
-    },
-    {
-      "src": "^/js/(.*)",
-      "dest": "/js/$1"
-    },
-    {
-      "src": "^/Images/(.*)",
-      "dest": "/Images/$1"
+      "source": "/celebration",
+      "destination": "/html/celebration.html"
     }
   ]
 }
