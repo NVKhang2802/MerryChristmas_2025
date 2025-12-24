@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📸 Kỷ Niệm Đẹp | Christmas Love</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="gallery-page">
+    <!-- Snowfall -->
+    <div class="snowflakes" id="snowContainer"></div>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-brand">
+            <span class="nav-icon">🎄</span>
+            <span class="nav-title">Christmas Love</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Trang Chủ</a></li>
+            <li><a href="gallery.html" class="nav-link active"><i class="fas fa-images"></i> Kỷ Niệm</a></li>
+            <li><a href="wishes.html" class="nav-link"><i class="fas fa-heart"></i> Lời Chúc</a></li>
+            <li><a href="celebration.html" class="nav-link"><i class="fas fa-star"></i> Ăn Mừng</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Gallery Header -->
+    <section class="page-header">
+        <h1 class="page-title">
+            <span class="title-icon">📸</span>
+            Kỷ Niệm Đẹp Của Chúng Ta
+            <span class="title-icon">💕</span>
+        </h1>
+        <p class="page-subtitle">Những khoảnh khắc đáng nhớ bên nhau</p>
+    </section>
+
+    <!-- Main Carousel Section -->
+    <section class="carousel-section">
+        <div class="carousel-container">
+            <div class="carousel-wrapper">
+                <div class="carousel-track" id="carouselTrack">
+                    <!-- Slide 1 - Kỷ Niệm Đẹp -->
+                    <div class="carousel-slide active">
+                        <div class="slide-content">
+                            <div class="slide-image">
+                                <img src="../Images/z7359344463205_4a6debf497cb2e7bea1c273b3a1102bd.jpg" alt="Kỷ niệm 1"
+                                    class="gallery-image">
+                            </div>
+                            <div class="slide-caption">
+                                <h3>🎄 Kỷ Niệm Đẹp</h3>
+                                <p>Những khoảnh khắc đặc biệt bên nhau trong mùa Giáng Sinh</p>
+                                <span class="slide-date">🎁 Giáng Sinh 2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 - Đêm Giáng Sinh -->
+                    <div class="carousel-slide">
+                        <div class="slide-content">
+                            <div class="slide-image">
+                                <img src="../Images/z7359344486078_916e9006898b37e50d0fb986778d4953.jpg"
+                                    alt="Đêm Giáng Sinh" class="gallery-image">
+                            </div>
+                            <div class="slide-caption">
+                                <h3>⭐ Đêm Giáng Sinh</h3>
+                                <p>Những khoảnh khắc lung linh và ấm áp trong đêm Noel</p>
+                                <span class="slide-date">❄️ Đêm 24/12</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 - Mãi Bên Nhau -->
+                    <div class="carousel-slide">
+                        <div class="slide-content">
+                            <div class="slide-image">
+                                <img src="../Images/z7359396515333_7a26c348953a1c2b7b3d62f0a8e9fd47.jpg"
+                                    alt="Mãi Bên Nhau" class="gallery-image">
+                            </div>
+                            <div class="slide-caption">
+                                <h3>💕 Mãi Bên Nhau</h3>
+                                <p>Và còn rất nhiều kỷ niệm đẹp phía trước chờ chúng ta...</p>
+                                <span class="slide-date">❤️ Forever & Always</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-btn prev-btn" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn next-btn" id="nextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators" id="carouselIndicators">
+                <span class="indicator active" data-slide="0"></span>
+                <span class="indicator" data-slide="1"></span>
+                <span class="indicator" data-slide="2"></span>
+            </div>
+
+            <!-- Auto-play toggle -->
+            <div class="carousel-autoplay">
+                <button class="autoplay-btn" id="autoplayBtn">
+                    <i class="fas fa-pause"></i>
+                    <span>Tự động chuyển</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Grid Section -->
+    <section class="photo-grid-section">
+        <h2 class="section-title">
+            <span>🖼️</span> Bộ Sưu Tập Ảnh <span>🖼️</span>
+        </h2>
+
+        <div class="photo-grid">
+            <div class="photo-item large">
+                <img src="../Images/z7359344463205_4a6debf497cb2e7bea1c273b3a1102bd.jpg" alt="Kỷ niệm 1"
+                    class="photo-image">
+                <div class="photo-overlay">
+                    <span class="overlay-icon"><i class="fas fa-heart"></i></span>
+                </div>
+            </div>
+            <div class="photo-item">
+                <img src="../Images/z7359344473576_f2e46660ff33cd0fcefe7e7f50bb57cf.jpg" alt="Kỷ niệm 2"
+                    class="photo-image">
+                <div class="photo-overlay">
+                    <span class="overlay-icon"><i class="fas fa-heart"></i></span>
+                </div>
+            </div>
+            <div class="photo-item">
+                <img src="../Images/z7359344485796_a87476d316123de8f6f5dcb2873213fb.jpg" alt="Kỷ niệm 3"
+                    class="photo-image">
+                <div class="photo-overlay">
+                    <span class="overlay-icon"><i class="fas fa-heart"></i></span>
+                </div>
+            </div>
+            <div class="photo-item">
+                <img src="../Images/z7359344486078_916e9006898b37e50d0fb986778d4953.jpg" alt="Kỷ niệm 4"
+                    class="photo-image">
+                <div class="photo-overlay">
+                    <span class="overlay-icon"><i class="fas fa-heart"></i></span>
+                </div>
+            </div>
+            <div class="photo-item large">
+                <img src="../Images/z7359344505265_8a6ecff0790e260d005f4ef26f150457.jpg" alt="Kỷ niệm 5"
+                    class="photo-image">
+                <div class="photo-overlay">
+                    <span class="overlay-icon"><i class="fas fa-heart"></i></span>
+                </div>
+            </div>
+            <div class="photo-item">
+                <img src="../Images/z7359396515333_7a26c348953a1c2b7b3d62f0a8e9fd47.jpg" alt="Kỷ niệm 6"
+                    class="photo-image">
+                <div class="photo-overlay">
+                    <span class="overlay-icon"><i class="fas fa-heart"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <p class="upload-hint">
+            <i class="fas fa-heart"></i>
+            Những kỷ niệm đẹp của chúng ta 💕
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span>🎄</span> Christmas Love <span>🎄</span>
+            </div>
+            <p class="footer-text">Made with ❤️ for you | Giáng Sinh 2024</p>
+            <div class="footer-decorations">
+                <span>🎁</span>
+                <span>⭐</span>
+                <span>❄️</span>
+                <span>🔔</span>
+                <span>🦌</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Music Control -->
+    <button class="music-toggle" id="musicToggle">
+        <i class="fas fa-music"></i>
+    </button>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

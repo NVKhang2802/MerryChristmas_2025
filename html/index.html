@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎄 Merry Christmas My Love 🎄</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="home-page">
+    <!-- Snowfall Container -->
+    <div class="snowflakes" id="snowContainer"></div>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-brand">
+            <span class="nav-icon">🎄</span>
+            <span class="nav-title">Christmas Love</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link active"><i class="fas fa-home"></i> Trang Chủ</a></li>
+            <li><a href="gallery.html" class="nav-link"><i class="fas fa-images"></i> Kỷ Niệm</a></li>
+            <li><a href="wishes.html" class="nav-link"><i class="fas fa-heart"></i> Lời Chúc</a></li>
+            <li><a href="celebration.html" class="nav-link"><i class="fas fa-star"></i> Ăn Mừng</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="hero-decoration left">
+                <span>🎁</span>
+                <span>⭐</span>
+                <span>🔔</span>
+            </div>
+
+            <h1 class="hero-title">
+                <span class="title-merry">Merry</span>
+                <span class="title-christmas">Christmas</span>
+                <span class="title-love">My Love ❤️</span>
+            </h1>
+
+            <p class="hero-subtitle">
+                Gửi đến người anh yêu thương nhất! 💕
+            </p>
+
+            <div class="hero-buttons">
+                <a href="wishes.html" class="btn btn-primary">
+                    <i class="fas fa-envelope-open-text"></i> Xem Lời Chúc
+                </a>
+                <a href="celebration.html" class="btn btn-secondary">
+                    <i class="fas fa-magic"></i> Ăn Mừng Nào!
+                </a>
+            </div>
+
+            <div class="hero-decoration right">
+                <span>🦌</span>
+                <span>❄️</span>
+                <span>🎅</span>
+            </div>
+        </div>
+
+        <!-- Animated Christmas Tree -->
+        <div class="christmas-tree-wrapper">
+            <div class="tree-container">
+                <div class="tree">
+                    <div class="star-top">⭐</div>
+                    <div class="tree-layer layer-1"></div>
+                    <div class="tree-layer layer-2"></div>
+                    <div class="tree-layer layer-3"></div>
+                    <div class="tree-layer layer-4"></div>
+                    <div class="tree-trunk"></div>
+
+                    <!-- Ornaments -->
+                    <div class="ornaments">
+                        <span class="ornament" style="top: 25%; left: 35%;">🔴</span>
+                        <span class="ornament" style="top: 25%; right: 35%;">🔵</span>
+                        <span class="ornament" style="top: 40%; left: 25%;">🟡</span>
+                        <span class="ornament" style="top: 40%; right: 25%;">🟢</span>
+                        <span class="ornament" style="top: 55%; left: 18%;">🟣</span>
+                        <span class="ornament" style="top: 55%; right: 18%;">⚪</span>
+                        <span class="ornament" style="top: 70%; left: 12%;">🔴</span>
+                        <span class="ornament" style="top: 70%; right: 12%;">🔵</span>
+                    </div>
+
+                    <!-- Lights -->
+                    <div class="tree-lights">
+                        <span class="tree-light" style="top: 20%; left: 40%;"></span>
+                        <span class="tree-light" style="top: 20%; right: 40%;"></span>
+                        <span class="tree-light" style="top: 35%; left: 28%;"></span>
+                        <span class="tree-light" style="top: 35%; right: 28%;"></span>
+                        <span class="tree-light" style="top: 50%; left: 20%;"></span>
+                        <span class="tree-light" style="top: 50%; right: 20%;"></span>
+                        <span class="tree-light" style="top: 65%; left: 15%;"></span>
+                        <span class="tree-light" style="top: 65%; right: 15%;"></span>
+                        <span class="tree-light" style="top: 75%; left: 10%;"></span>
+                        <span class="tree-light" style="top: 75%; right: 10%;"></span>
+                    </div>
+                </div>
+
+                <!-- Gifts under tree -->
+                <div class="tree-gifts">
+                    <span class="gift-item">🎁</span>
+                    <span class="gift-item">�</span>
+                    <span class="gift-item">🎁</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section class="countdown-section">
+        <div class="section-container">
+            <h2 class="section-title">
+                <span class="title-icon">⏰</span>
+                Đếm Ngược Đến Giáng Sinh
+                <span class="title-icon">⏰</span>
+            </h2>
+
+            <div class="countdown-wrapper">
+                <div class="countdown-box">
+                    <div class="countdown-value" id="days">00</div>
+                    <div class="countdown-label">Ngày</div>
+                    <div class="countdown-decoration">🎄</div>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-box">
+                    <div class="countdown-value" id="hours">00</div>
+                    <div class="countdown-label">Giờ</div>
+                    <div class="countdown-decoration">⭐</div>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-box">
+                    <div class="countdown-value" id="minutes">00</div>
+                    <div class="countdown-label">Phút</div>
+                    <div class="countdown-decoration">🎁</div>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-box">
+                    <div class="countdown-value" id="seconds">00</div>
+                    <div class="countdown-label">Giây</div>
+                    <div class="countdown-decoration">❄️</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="section-container">
+            <div class="features-grid">
+                <a href="gallery.html" class="feature-card">
+                    <div class="feature-icon">📸</div>
+                    <h3 class="feature-title">Kỷ Niệm Đẹp</h3>
+                    <p class="feature-desc">Xem lại những khoảnh khắc đẹp của chúng ta</p>
+                    <span class="feature-arrow"><i class="fas fa-arrow-right"></i></span>
+                </a>
+
+                <a href="wishes.html" class="feature-card">
+                    <div class="feature-icon">💌</div>
+                    <h3 class="feature-title">Lời Chúc Yêu Thương</h3>
+                    <p class="feature-desc">Những lời chúc ngọt ngào dành cho em</p>
+                    <span class="feature-arrow"><i class="fas fa-arrow-right"></i></span>
+                </a>
+
+                <a href="celebration.html" class="feature-card">
+                    <div class="feature-icon">🎆</div>
+                    <h3 class="feature-title">Pháo Hoa Rực Rỡ</h3>
+                    <p class="feature-desc">Cùng nhau đón Giáng Sinh thật vui!</p>
+                    <span class="feature-arrow"><i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Love Message Section -->
+    <section class="love-section">
+        <div class="section-container">
+            <div class="love-card">
+                <div class="love-header">
+                    <span class="love-icon">💝</span>
+                    <h2>Gửi Người Anh Yêu</h2>
+                </div>
+                <div class="love-content">
+                    <p class="love-text">
+                        <span class="quote-mark">"</span>
+                        Em là món quà đẹp nhất mà cuộc đời đã ban tặng cho anh.
+                        Cảm ơn em đã đến bên anh, làm mỗi ngày trở nên ý nghĩa hơn.
+                        Mùa Giáng Sinh này, anh chỉ ước có em bên cạnh mãi mãi.
+                        <span class="quote-mark">"</span>
+                    </p>
+                    <div class="love-signature">
+                        <span class="signature-heart">❤️</span>
+                        <span class="signature-text">Yêu em nhiều lắm!</span>
+                    </div>
+                </div>
+                <div class="floating-hearts">
+                    <span class="float-heart">💕</span>
+                    <span class="float-heart">💗</span>
+                    <span class="float-heart">💖</span>
+                    <span class="float-heart">💝</span>
+                    <span class="float-heart">❤️</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Santa Animation -->
+    <div class="santa-sleigh">
+        <span class="santa">🎅</span>
+        <span class="reindeer">🦌</span>
+        <span class="sleigh">🛷</span>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span>🎄</span> Christmas Love <span>🎄</span>
+            </div>
+            <p class="footer-text">Made with ❤️ for you | Giáng Sinh 2024</p>
+            <div class="footer-decorations">
+                <span>�</span>
+                <span>⭐</span>
+                <span>❄️</span>
+                <span>🔔</span>
+                <span>🦌</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Music Control -->
+    <button class="music-toggle" id="musicToggle">
+        <i class="fas fa-music"></i>
+    </button>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎆 Ăn Mừng Giáng Sinh | Christmas Love</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="celebration-page">
+    <!-- Fireworks Canvas -->
+    <canvas id="fireworksCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="main-nav celebration-nav">
+        <div class="nav-brand">
+            <span class="nav-icon">🎄</span>
+            <span class="nav-title">Christmas Love</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Trang Chủ</a></li>
+            <li><a href="gallery.html" class="nav-link"><i class="fas fa-images"></i> Kỷ Niệm</a></li>
+            <li><a href="wishes.html" class="nav-link"><i class="fas fa-heart"></i> Lời Chúc</a></li>
+            <li><a href="celebration.html" class="nav-link active"><i class="fas fa-star"></i> Ăn Mừng</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Main Celebration Content -->
+    <section class="celebration-content">
+        <div class="celebration-title-wrapper">
+            <h1 class="celebration-title">
+                <span class="celebrate-text animate-in">🎉 Merry Christmas! 🎉</span>
+            </h1>
+            <h2 class="celebration-subtitle">
+                <span class="subtitle-heart">❤️</span>
+                Chúc Mừng Giáng Sinh Em Yêu!
+                <span class="subtitle-heart">❤️</span>
+            </h2>
+        </div>
+
+        <!-- Celebration Buttons -->
+        <div class="celebration-buttons">
+            <button class="celebration-btn firework-btn" id="launchFireworks">
+                <i class="fas fa-rocket"></i>
+                <span>Bắn Pháo Hoa!</span>
+            </button>
+            <button class="celebration-btn confetti-btn" id="launchConfetti">
+                <i class="fas fa-star"></i>
+                <span>Rải Confetti!</span>
+            </button>
+            <button class="celebration-btn surprise-btn" id="bigSurprise">
+                <i class="fas fa-gift"></i>
+                <span>Bất Ngờ Lớn!</span>
+            </button>
+        </div>
+
+        <!-- Animated Message -->
+        <div class="celebration-message" id="celebrationMessage">
+            <div class="message-content hidden" id="surpriseMessageContent">
+                <div class="big-celebration">
+                    <span class="big-emoji bounce">🎄</span>
+                    <span class="big-emoji bounce delay-1">❤️</span>
+                    <span class="big-emoji bounce delay-2">🎁</span>
+                </div>
+                <h2 class="surprise-title">Anh Yêu Em Rất Nhiều!</h2>
+                <p class="surprise-text">
+                    Em là điều tuyệt vời nhất đã đến với cuộc đời anh!
+                    <br>
+                    Chúc em mùa Giáng Sinh thật hạnh phúc! 🥰
+                </p>
+                <div class="heart-explosion" id="heartExplosion"></div>
+            </div>
+        </div>
+
+        <!-- Interactive Gift Boxes -->
+        <div class="gift-boxes-section">
+            <h2 class="section-title glow-text">
+                <span>🎁</span> Hộp Quà Bất Ngờ <span>🎁</span>
+            </h2>
+            <p class="section-subtitle">Click vào từng hộp để nhận bất ngờ!</p>
+
+            <div class="gift-boxes-grid">
+                <div class="gift-box-item" data-gift="1">
+                    <div class="gift-box-3d">
+                        <div class="box-lid"></div>
+                        <div class="box-body">
+                            <div class="box-ribbon"></div>
+                        </div>
+                        <div class="box-surprise">
+                            <span class="surprise-emoji">💕</span>
+                            <p>100 nụ hôn!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gift-box-item" data-gift="2">
+                    <div class="gift-box-3d">
+                        <div class="box-lid"></div>
+                        <div class="box-body">
+                            <div class="box-ribbon"></div>
+                        </div>
+                        <div class="box-surprise">
+                            <span class="surprise-emoji">🍫</span>
+                            <p>Chocolate vô hạn!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gift-box-item" data-gift="3">
+                    <div class="gift-box-3d">
+                        <div class="box-lid"></div>
+                        <div class="box-body">
+                            <div class="box-ribbon"></div>
+                        </div>
+                        <div class="box-surprise">
+                            <span class="surprise-emoji">🌹</span>
+                            <p>999 đóa hoa hồng!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gift-box-item" data-gift="4">
+                    <div class="gift-box-3d">
+                        <div class="box-lid"></div>
+                        <div class="box-body">
+                            <div class="box-ribbon"></div>
+                        </div>
+                        <div class="box-surprise">
+                            <span class="surprise-emoji">💝</span>
+                            <p>Tình yêu vĩnh cửu!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Spinning Wheel -->
+        <div class="wheel-section">
+            <h2 class="section-title glow-text">
+                <span>🎡</span> Vòng Quay May Mắn <span>🎡</span>
+            </h2>
+
+            <div class="wheel-container">
+                <div class="wheel" id="fortuneWheel">
+                    <div class="wheel-segment"><span>💋 Hôn</span></div>
+                    <div class="wheel-segment"><span>🤗 Ôm 10s</span></div>
+                    <div class="wheel-segment"><span>🌙 Đi dạo</span></div>
+                    <div class="wheel-segment"><span>🍜 Ăn vặt</span></div>
+                    <div class="wheel-segment"><span>📺 Phim</span></div>
+                    <div class="wheel-segment"><span>💌 Thư tay</span></div>
+                    <div class="wheel-segment"><span>🍜 Mì cay</span></div>
+                    <div class="wheel-segment"><span>🎮 Game</span></div>
+                </div>
+                <div class="wheel-pointer">▼</div>
+                <button class="spin-btn" id="spinBtn">
+                    <i class="fas fa-sync-alt"></i> Quay Thôi!
+                </button>
+            </div>
+            <div class="wheel-result" id="wheelResult"></div>
+        </div>
+
+        <!-- Party Mode Section -->
+        <div class="party-section">
+            <h2 class="section-title glow-text">
+                <span>🎊</span> Party Mode <span>🎊</span>
+            </h2>
+
+            <div class="party-controls">
+                <button class="party-btn disco-btn" id="discoMode">
+                    <i class="fas fa-compact-disc"></i>
+                    <span>Disco Mode</span>
+                </button>
+                <button class="party-btn rainbow-btn" id="rainbowMode">
+                    <i class="fas fa-rainbow"></i>
+                    <span>Rainbow Mode</span>
+                </button>
+                <button class="party-btn stars-btn" id="starsMode">
+                    <i class="fas fa-star"></i>
+                    <span>Stars Mode</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Confetti Container -->
+    <div class="confetti-container" id="confettiContainer"></div>
+
+    <!-- Footer -->
+    <footer class="main-footer celebration-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span>🎄</span> Christmas Love <span>🎄</span>
+            </div>
+            <p class="footer-text">Made with ❤️ for you | Giáng Sinh 2024</p>
+            <div class="footer-decorations">
+                <span>🎁</span>
+                <span>⭐</span>
+                <span>❄️</span>
+                <span>🔔</span>
+                <span>🦌</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Music Control -->
+    <button class="music-toggle" id="musicToggle">
+        <i class="fas fa-music"></i>
+    </button>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

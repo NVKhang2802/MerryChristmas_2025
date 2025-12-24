@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💌 Lời Chúc Yêu Thương | Christmas Love</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="wishes-page">
+    <!-- Snowfall -->
+    <div class="snowflakes" id="snowContainer"></div>
+
+    <!-- Floating Hearts Background -->
+    <div class="hearts-bg" id="heartsBg"></div>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-brand">
+            <span class="nav-icon">🎄</span>
+            <span class="nav-title">Christmas Love</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Trang Chủ</a></li>
+            <li><a href="gallery.html" class="nav-link"><i class="fas fa-images"></i> Kỷ Niệm</a></li>
+            <li><a href="wishes.html" class="nav-link active"><i class="fas fa-heart"></i> Lời Chúc</a></li>
+            <li><a href="celebration.html" class="nav-link"><i class="fas fa-star"></i> Ăn Mừng</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Wishes Header -->
+    <section class="page-header wishes-header">
+        <h1 class="page-title">
+            <span class="title-icon">💌</span>
+            Lời Chúc Giáng Sinh
+            <span class="title-icon">💕</span>
+        </h1>
+        <p class="page-subtitle">Những lời yêu thương anh dành cho em</p>
+    </section>
+
+    <!-- Main Wish Card -->
+    <section class="main-wish-section">
+        <div class="wish-envelope" id="wishEnvelope" onclick="openEnvelope()">
+            <div class="envelope-back"></div>
+            <div class="envelope-letter" id="envelopeLetter">
+                <div class="letter-content">
+                    <div class="letter-header">
+                        <span class="letter-decoration">🎄</span>
+                        <h2>Gửi Em Yêu,</h2>
+                        <span class="letter-decoration">🎄</span>
+                    </div>
+                    <div class="letter-body">
+                        <p>
+                            Mùa Giáng Sinh lại về, và điều tuyệt vời nhất là anh có em ở bên.
+                        </p>
+                        <p>
+                            Em biết không? Với anh, mỗi ngày được ở bên em đều là một món quà quý giá.
+                            Em như ngôi sao sáng nhất trên đỉnh cây thông, như bông tuyết tinh khôi rơi nhẹ trên tay,
+                            như hơi ấm của lò sưởi trong đêm đông lạnh giá.
+                        </p>
+                        <p>
+                            Cảm ơn em đã đến bên anh, đã cho anh biết thế nào là yêu thương,
+                            là hạnh phúc, là muốn được ở bên một người mãi mãi.
+                        </p>
+                        <p>
+                            Giáng Sinh này, anh chỉ ước mong một điều duy nhất -
+                            <strong>được bên em mãi mãi!</strong>
+                        </p>
+                    </div>
+                    <div class="letter-signature">
+                        <p>Yêu em nhiều lắm! 💕</p>
+                        <p class="signature-name">- Người yêu em nhất thế giới -</p>
+                    </div>
+                    <div class="letter-footer">
+                        <span>❤️</span>
+                        <span>🎁</span>
+                        <span>🎄</span>
+                    </div>
+                </div>
+            </div>
+            <div class="envelope-front" id="envelopeFront">
+                <div class="envelope-flap"></div>
+                <div class="envelope-seal">💝</div>
+                <p class="envelope-label">Click để mở thư! 💌</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wish Cards Section -->
+    <section class="wish-cards-section">
+        <h2 class="section-title">
+            <span>✨</span> Những Điều Anh Muốn Nói <span>✨</span>
+        </h2>
+
+        <div class="wish-cards-grid">
+            <!-- Card 1 -->
+            <div class="wish-card" style="--delay: 0s">
+                <div class="wish-card-inner">
+                    <div class="wish-card-front">
+                        <span class="card-emoji">🌟</span>
+                        <p>Click để xem lời chúc #1</p>
+                    </div>
+                    <div class="wish-card-back">
+                        <p class="wish-text">"Em là ánh sáng soi đường cho anh trong những ngày tăm tối nhất."</p>
+                        <span class="wish-heart">💖</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="wish-card" style="--delay: 0.1s">
+                <div class="wish-card-inner">
+                    <div class="wish-card-front">
+                        <span class="card-emoji">🎁</span>
+                        <p>Click để xem lời chúc #2</p>
+                    </div>
+                    <div class="wish-card-back">
+                        <p class="wish-text">"Gặp được em là món quà tuyệt vời nhất cuộc đời đã ban tặng cho anh."</p>
+                        <span class="wish-heart">💝</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="wish-card" style="--delay: 0.2s">
+                <div class="wish-card-inner">
+                    <div class="wish-card-front">
+                        <span class="card-emoji">❄️</span>
+                        <p>Click để xem lời chúc #3</p>
+                    </div>
+                    <div class="wish-card-back">
+                        <p class="wish-text">"Bên em, mùa đông không còn lạnh nữa vì trái tim anh luôn ấm áp."</p>
+                        <span class="wish-heart">💗</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="wish-card" style="--delay: 0.3s">
+                <div class="wish-card-inner">
+                    <div class="wish-card-front">
+                        <span class="card-emoji">🎄</span>
+                        <p>Click để xem lời chúc #4</p>
+                    </div>
+                    <div class="wish-card-back">
+                        <p class="wish-text">"Chúc em mùa Giáng Sinh thật nhiều niềm vui, hạnh phúc và tràn đầy yêu
+                            thương!"</p>
+                        <span class="wish-heart">💕</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="wish-card" style="--delay: 0.4s">
+                <div class="wish-card-inner">
+                    <div class="wish-card-front">
+                        <span class="card-emoji">🦌</span>
+                        <p>Click để xem lời chúc #5</p>
+                    </div>
+                    <div class="wish-card-back">
+                        <p class="wish-text">"Anh sẽ là chú tuần lộc chở em đến mọi nơi em muốn đến!"</p>
+                        <span class="wish-heart">🥰</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="wish-card" style="--delay: 0.5s">
+                <div class="wish-card-inner">
+                    <div class="wish-card-front">
+                        <span class="card-emoji">💑</span>
+                        <p>Click để xem lời chúc #6</p>
+                    </div>
+                    <div class="wish-card-back">
+                        <p class="wish-text">"Mãi mãi bên em - đó là lời hứa của anh!"</p>
+                        <span class="wish-heart">❤️</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promise Section -->
+    <section class="promise-section">
+        <div class="promise-container">
+            <div class="promise-box">
+                <div class="promise-icon">💕</div>
+                <h2 class="promise-title">Lời Hứa Của Anh</h2>
+                <div class="promise-list">
+                    <div class="promise-item">
+                        <span class="promise-check">✓</span>
+                        <p>Luôn yêu thương và bảo vệ em</p>
+                    </div>
+                    <div class="promise-item">
+                        <span class="promise-check">✓</span>
+                        <p>Ở bên em trong mọi hoàn cảnh</p>
+                    </div>
+                    <div class="promise-item">
+                        <span class="promise-check">✓</span>
+                        <p>Làm em cười mỗi ngày</p>
+                    </div>
+                    <div class="promise-item">
+                        <span class="promise-check">✓</span>
+                        <p>Cùng em tạo thêm nhiều kỷ niệm đẹp</p>
+                    </div>
+                    <div class="promise-item">
+                        <span class="promise-check">✓</span>
+                        <p>Yêu em nhiều hơn mỗi ngày</p>
+                    </div>
+                </div>
+                <div class="promise-signature">
+                    <span>❤️ Forever & Always ❤️</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Love Counter -->
+    <section class="love-counter-section">
+        <div class="love-counter-container">
+            <h2 class="counter-title">❤️ Bộ Đếm Tình Yêu ❤️</h2>
+            <p class="counter-subtitle">Click vào trái tim để thể hiện tình cảm!</p>
+
+            <div class="love-counter">
+                <button class="love-button" id="loveButton">
+                    <span class="heart-icon">❤️</span>
+                </button>
+                <div class="love-count">
+                    <span id="loveCount">0</span>
+                    <p>lần yêu</p>
+                </div>
+            </div>
+
+            <div class="love-message" id="loveMessage"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span>🎄</span> Christmas Love <span>🎄</span>
+            </div>
+            <p class="footer-text">Made with ❤️ for you | Giáng Sinh 2024</p>
+            <div class="footer-decorations">
+                <span>🎁</span>
+                <span>⭐</span>
+                <span>❄️</span>
+                <span>🔔</span>
+                <span>🦌</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Music Control -->
+    <button class="music-toggle" id="musicToggle">
+        <i class="fas fa-music"></i>
+    </button>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
