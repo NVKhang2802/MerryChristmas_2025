@@ -1,8 +1,32 @@
 {
-  "rewrites": [
-    { "source": "/", "destination": "/html/index.html" },
-    { "source": "/gallery", "destination": "/html/gallery.html" },
-    { "source": "/wishes", "destination": "/html/wishes.html" },
-    { "source": "/celebration", "destination": "/html/celebration.html" }
+  "routes": [
+    {
+      "src": "^/$",
+      "dest": "/html/index.html"
+    },
+    {
+      "src": "^/gallery$",
+      "dest": "/html/gallery.html"
+    },
+    {
+      "src": "^/wishes$",
+      "dest": "/html/wishes.html"
+    },
+    {
+      "src": "^/celebration$",
+      "dest": "/html/celebration.html"
+    },
+    {
+      "src": "^/css/(.*)",
+      "dest": "/css/$1"
+    },
+    {
+      "src": "^/js/(.*)",
+      "dest": "/js/$1"
+    },
+    {
+      "src": "^/Images/(.*)",
+      "dest": "/Images/$1"
+    }
   ]
 }
